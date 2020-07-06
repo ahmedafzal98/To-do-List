@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_header"
+        android:layout_marginTop="10dp"
+        android:text="Overdue"
+        android:visibility="invisible"
+        android:textColor="#ff0000"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            android:id="@+id/cardView"
+            android:layout_below="@id/txt_header">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/cardview_light_background"
+                android:paddingBottom="4dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_view3"
+                    android:textSize="17sp"
+                    android:textStyle="italic"
+                    android:textColor="#000000"
+                    android:text="TextView3"
+                    android:layout_marginLeft="70dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_view4"
+                    android:text="TextView4"
+                    android:textColor="#FF6B6B6B"
+                    android:layout_marginTop="6dp"
+                    android:layout_below="@id/txt_view3"
+                    android:layout_marginLeft="70dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_view5"
+                    android:text="TextView5"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_below="@id/txt_view4"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="6dp"/>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
